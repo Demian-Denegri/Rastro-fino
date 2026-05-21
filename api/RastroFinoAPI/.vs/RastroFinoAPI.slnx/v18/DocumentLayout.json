@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E86DA7A-AE04-C651-ABFC-8BBE7F3D8AA8}|RastroFinoAPI\\RastroFinoAPI.csproj|c:\\users\\demia\\desktop\\rama\\api\\rastrofinoapi\\rastrofinoapi\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E86DA7A-AE04-C651-ABFC-8BBE7F3D8AA8}|RastroFinoAPI\\RastroFinoAPI.csproj|solutionrelative:rastrofinoapi\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E86DA7A-AE04-C651-ABFC-8BBE7F3D8AA8}|RastroFinoAPI\\RastroFinoAPI.csproj|c:\\users\\demia\\desktop\\rama\\api\\rastrofinoapi\\rastrofinoapi\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E86DA7A-AE04-C651-ABFC-8BBE7F3D8AA8}|RastroFinoAPI\\RastroFinoAPI.csproj|solutionrelative:rastrofinoapi\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E86DA7A-AE04-C651-ABFC-8BBE7F3D8AA8}|RastroFinoAPI\\RastroFinoAPI.csproj|c:\\users\\demia\\desktop\\rama\\api\\rastrofinoapi\\rastrofinoapi\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E86DA7A-AE04-C651-ABFC-8BBE7F3D8AA8}|RastroFinoAPI\\RastroFinoAPI.csproj|solutionrelative:rastrofinoapi\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E86DA7A-AE04-C651-ABFC-8BBE7F3D8AA8}|RastroFinoAPI\\RastroFinoAPI.csproj|c:\\users\\demia\\desktop\\rama\\api\\rastrofinoapi\\rastrofinoapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E86DA7A-AE04-C651-ABFC-8BBE7F3D8AA8}|RastroFinoAPI\\RastroFinoAPI.csproj|solutionrelative:rastrofinoapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\RastroFinoAPI\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "RastroFinoAPI\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\RastroFinoAPI\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "RastroFinoAPI\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwEgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T20:37:41.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Genero.cs",
+              "DocumentMoniker": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\RastroFinoAPI\\Models\\Genero.cs",
+              "RelativeDocumentMoniker": "RastroFinoAPI\\Models\\Genero.cs",
+              "ToolTip": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\RastroFinoAPI\\Models\\Genero.cs",
+              "RelativeToolTip": "RastroFinoAPI\\Models\\Genero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T20:26:40.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\RastroFinoAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "RastroFinoAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\RastroFinoAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "RastroFinoAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T20:24:30.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerosController.cs",
+              "DocumentMoniker": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\RastroFinoAPI\\Controllers\\GenerosController.cs",
+              "RelativeDocumentMoniker": "RastroFinoAPI\\Controllers\\GenerosController.cs",
+              "ToolTip": "C:\\Users\\demia\\Desktop\\rama\\api\\RastroFinoAPI\\RastroFinoAPI\\Controllers\\GenerosController.cs",
+              "RelativeToolTip": "RastroFinoAPI\\Controllers\\GenerosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T20:22:41.865Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

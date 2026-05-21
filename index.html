@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luxury Essence</title>
+  
+  <link rel="icon" type="image/jpeg" href="https://instagram.faep4-2.fna.fbcdn.net/v/t51.82787-19/701088291_18107075440813195_98303434272551663_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.faep4-2.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2gHAq4b73n3TVkaH6YsFGBTd1UafEzDJjrgel1_1SR0N2_HjKFUa6xfm9KDo2uQQFtNbzs1BUkr3r06Mrg1gq9eo&_nc_ohc=bI721LqxQB0Q7kNvwE4bXra&_nc_gid=FEboTaTK27wW0AS02xjVNA&edm=ADDLYBMBAAAA&ccb=7-5&oh=00_Af7K87TaKQd5P-5GZB3AKhcWA8bh-6UG5riYjBQqhJNSmQ&oe=6A12537D&_nc_sid=56bdfd">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +13,7 @@
 
   <header>
     <div class="hero">
-      <h1>Luxury Essence</h1>
+      <h1>Rastro Fino</h1>
       <p>Perfumes exclusivos con elegancia y estilo</p>
     </div>
   </header>
@@ -20,82 +22,8 @@
 
     <h2 class="titulo">Nuestros Perfumes</h2>
 
-    <div class="grid">
+    <div class="grid" id="grid">
 
-      <!-- Producto 1 -->
-      <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="contenido">
-
-          <h2>Black Oud</h2>
-
-          <p class="precio">$45.000</p>
-
-          <div class="cantidad">
-            <label>Cantidad:</label>
-
-            <input type="number" min="1" value="1" id="cant1">
-          </div>
-
-          <button onclick="comprar('Black Oud', 45000, 'cant1')">
-            Comprar
-          </button>
-
-        </div>
-
-      </div>
-
-      <!-- Producto 2 -->
-      <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="contenido">
-
-          <h2>Golden Night</h2>
-
-          <p class="precio">$62.000</p>
-
-          <div class="cantidad">
-            <label>Cantidad:</label>
-
-            <input type="number" min="1" value="1" id="cant2">
-          </div>
-
-          <button onclick="comprar('Golden Night', 62000, 'cant2')">
-            Comprar
-          </button>
-
-        </div>
-
-      </div>
-
-      <!-- Producto 3 -->
-      <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="contenido">
-
-          <h2>Royal Essence</h2>
-
-          <p class="precio">$55.000</p>
-
-          <div class="cantidad">
-            <label>Cantidad:</label>
-
-            <input type="number" min="1" value="1" id="cant3">
-          </div>
-
-          <button onclick="comprar('Royal Essence', 55000, 'cant3')">
-            Comprar
-          </button>
-
-        </div>
-
-      </div>
 
     </div>
 
@@ -111,6 +39,20 @@
     <div class="modal-content">
 
       <h2>Resumen de Compra</h2>
+        <label>Nombre:</label>
+        <input type="text" id="clienteNombre" placeholder="Tu nombre">
+
+        <label>Apellido:</label>
+        <input type="text" id="clienteApellido" placeholder="Tu Apellido">
+
+        <label>Email:</label>
+        <input type="text" id="clienteEmail" placeholder="Tu Email">
+
+        <label>Telefono:</label>
+        <input type="text" id="clienteTelefono" placeholder="Tu Telefono">
+        
+        <label>Dirección:</label>
+        <input type="text" id="clienteDireccion" placeholder="Tu dirección">
 
       <p id="producto"></p>
       <p id="cantidad"></p>

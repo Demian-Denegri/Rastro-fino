@@ -1,3 +1,37 @@
+const API_URL = "https://localhost:7099";
+
+async function cargarProductos() {
+  const grid = document.getElementById("grid");
+  
+  const response = await fetch(`${API_URL}/api/productos`);
+  const productos = await response.json();
+
+  grid.innerHTML = "";
+
+  productos.forEach((producto, index) => {
+    const id = `cant${index}`;
+    grid.innerHTML += `
+      <div class="card">
+        <img src="${producto.imagen || 'https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1200&auto=format&fit=crop'}">
+        <div class="contenido">
+          <h2>${producto.nombre}</h2>
+          <p class="precio">$${producto.precio.toLocaleString()}</p>
+          <div class="cantidad">
+            <label>Cantidad:</label>
+            <input type="number" min="1" value="1" id="${id}">
+          </div>
+          <button onclick="comprar('${producto.nombre}', ${producto.precio}, '${id}')">
+            Comprar
+          </button>
+        </div>
+      </div>
+    `;
+  });
+}
+
+cargarProductos();
+
+
 let nombreProducto = "";
 let cantidadProducto = 0;
 let totalProducto = 0;
@@ -5,6 +39,11 @@ let totalProducto = 0;
 function comprar(nombre, precio, inputId){
 
   let cantidad = document.getElementById(inputId).value;
+
+if (isNaN(cantidad) || cantidad <1) {
+    cantidad = 1;
+    document.getElementById(inputId).value = 1;
+}
 
   let total = precio * cantidad;
 
@@ -41,10 +80,43 @@ document.getElementById("metodoPago").addEventListener("change", function(){
 
 });
 
-document.getElementById("whatsappBtn").addEventListener("click", function(){
+document.getElementById("whatsappBtn").addEventListener("click", async function(){
 
   let metodo = document.getElementById("metodoPago").value;
 
+  // Tomo los datos del cliente del formulario
+  let nombre = document.getElementById("clienteNombre").value;
+  let apellido = document.getElementById("clienteApellido").value;
+  let email = document.getElementById("clienteEmail").value;
+  let telefono = document.getElementById("clienteTelefono").value;
+
+  if(!nombre || !apellido || !email || !telefono){
+    alert("Por favor completá todos los campos obligatorios.");
+    return;
+  }
+  // Guardar cliente en la BD
+  let responseCliente = await fetch(`${API_URL}/api/clientes`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(cliente)
+  });
+
+  let clienteGuardado = await responseCliente.json();
+
+  // Guardar pedido en la BD
+  let pedido = {
+    idCliente: clienteGuardado.idCliente,
+    estado: "Pendiente",
+    total: totalProducto
+  };
+
+  await fetch(`${API_URL}/api/pedidos`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(pedido)
+  });
+
+  // Mandar WhatsApp
   let mensajeWhatsapp =
   `Hola! Quiero realizar un pedido:%0A%0A` +
   `Perfume: ${nombreProducto}%0A` +
@@ -53,17 +125,13 @@ document.getElementById("whatsappBtn").addEventListener("click", function(){
   `Método de pago: ${metodo}`;
 
   if(metodo === "Transferencia"){
-
     mensajeWhatsapp += `%0A%0AYa realicé la transferencia.`;
   }
 
-  let numero = "5491168220298";
-
+  let numero = "5491140952888";
   let url = `https://wa.me/${numero}?text=${mensajeWhatsapp}`;
-
   window.open(url, "_blank");
 });
-
 function cerrarModal(){
 
   document.getElementById("modal").style.display = "none";
